@@ -15,4 +15,5 @@ Trabalho feito no 1° semestre do curso em conjunto com o dev João.  O site é 
 ### Contato dos criadores
 
 <a href="https://www.linkedin.com/in/beatriz-silva-152099243">Beatriz Silva</a>
-<a href="https://www.linkedin.com/in/joaombdev/">João A></a>
+<br>
+<a href="https://www.linkedin.com/in/joaombdev/">João A</a>
