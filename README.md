@@ -5,8 +5,7 @@ Trabalho feito no 1° semestre do curso em conjunto com o dev João.  O site é 
 
 ## <a href="https://beatrizon.github.io/The-Burguer/landing.html">Começe no site por aqui</a>
 
-### <a href=""></a>
-### <a href=""></a>
-### <a href=""></a>
-### <a href=""></a>
-### <a href=""></a>
+### <a href="https://beatrizon.github.io/The-Burguer/historia.html">Veja a história aqui</a>
+### <a href="https://beatrizon.github.io/The-Burguer/menu.html">Veja o menu aqui</a>
+### <a href="https://beatrizon.github.io/The-Burguer/reservas.html">Faça a reserva aqui</a>
+### <a href="https://beatrizon.github.io/The-Burguer/aniversariante.html">Veja a mensagem de aniversario aqui</a>
