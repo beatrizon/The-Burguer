@@ -1,0 +1,491 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Oswald:wght@400;500;600&display=swap');
+/*
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'Inter', sans-serif;
+  font-family: 'Oswald', sans-serif;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+}
+
+/*HEADER DE TODAS AS PÁGINAS*/
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: #574117;
+}
+
+.nome-header img {
+  margin: 30px;
+}
+
+.itens-header {
+  color: #f1f1f1;
+  font-family: 'Inter', sans-serif;
+}
+
+.itens-header a {
+  margin: 0 45px 0 0;
+  font-weight: 800;
+}
+
+a:link,
+a:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*FOOTER DE TODAS AS PÁGINAS*/
+
+footer {
+  font-family: 'Montserrat', sans-serif;
+  padding: 25px;
+  background: #282828;
+  text-align: center;
+  color: aliceblue;
+}
+
+/*LANDING PAGE*/
+#body-landing-page {
+  background-color: #574117;
+}
+
+#imagem-principal {
+  width: 100%;
+}
+
+#titulo {
+  position: absolute;
+  left: 406px;
+  right: 406px;
+  top: 110px;
+  bottom: 268px;
+
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 128px;
+  line-height: 171px;
+  text-align: center;
+
+  color: #AC2222;
+
+  text-shadow:
+    2px -1px 2px black,
+    1px 1px 0px black,
+    3px -1px 2px black,
+    1px 0px 0px black;
+}
+
+#linha {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  padding: 12px 24px;
+}
+
+.contem {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#explore {
+  background: #FFEDED;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 27px;
+  border-radius: 13px;
+}
+
+.contem button {
+  padding: 3px 10px;
+}
+
+/*PÁGINA DA HISTÓRIA, AMBIENTE E LOCAIS*/
+
+#corpo-historia {
+  display: grid;
+  width: auto;
+  grid-template-columns: 1.6fr 4fr 1.9fr;
+}
+
+#article-historia {
+  background-color: #C99749;
+  display: grid;
+  grid-template-rows: 10vh 90vh;
+  position: sticky;
+  top: 15px;
+  /*não sei porque esse position sticky não funcionou, eu tentei colocar eles individualmente no "historia-titulo" e no "historia-texo" acho que é por que o article está posicionado com GRID*/
+}
+
+.historia-titulo, .ambiente-titulo, .locais-titulo{
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  margin: 50px 0 20px 0;
+}
+
+.historia-texto {
+  font-family: 'Inter', sans-serif;
+  margin: 20px;
+  word-spacing: 5px;
+}
+
+.historia-texto p {
+  margin: 30px auto 30px auto;
+  text-align: center;
+}
+
+#ambientes-main {
+  background-color: #D9B57E;
+}
+
+.ambientes {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto auto;
+}
+
+.ambientes img {
+  margin: 0 0 35px 20px;
+  border-radius: 20px;
+}
+
+.ambientes p {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+}
+
+#locais-aside {
+  background-color: #E4B773;
+}
+
+.locais {
+  display: grid;
+  row-gap: 130px;
+}
+
+.locais section {
+  margin: 20px 60px 0 60px;
+}
+
+.locais section div {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.locais-titulo {
+  font-size: 30px;
+}
+
+.locais p {
+  font-family: 'Inter', sans-serif;
+  position: relative;
+  top: 20px;
+}
+
+/*PAGINA DO MENU (CARDAPIO)*/
+
+#menu-main {
+  display: flex;
+}
+
+main nav {
+  background-color: #C99749; 
+  width: 25%;
+}
+
+main nav h1 {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: xx-large;
+  color: aliceblue;
+  text-align: center;
+  margin: 50px auto 50px auto;
+  position: sticky;
+  top: 50px;
+}
+
+main nav section {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: x-large;
+  color: aliceblue;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  top: 90px;
+}
+
+main nav section a {
+  text-align: left;
+  margin: 40px auto 40px auto;
+}
+
+#menu-article {
+  width: 75%;
+  background-color: #e4b773;
+}
+
+#menu-article section div h1 {
+  color: aliceblue;
+  font-family: 'Inter', sans-serif;
+  font-weight: 800;
+  font-size: xx-large;
+  text-align: center;
+  margin: 40px auto;
+  padding: 50px 0;
+}
+
+.menu-item {
+  background-color: rgba(201, 151, 73, 50%);
+  border-radius: 10px;
+  margin: 30px 30px;
+  padding: 20px;
+  display: flex;
+}
+
+.menu-item-image {
+  margin: 40px;
+  width: 600px;
+  border-radius: 70px;
+}
+
+.menu-item-text {
+  margin: 20px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-flow: column;
+}
+
+.menu-item-head {
+  padding: 0 10px;
+  margin: auto;
+  font-family: 'Inter';
+  font-size: 2.5rem;
+  border-bottom: 1px solid aliceblue;
+}
+
+.menu-item-description {
+  margin: auto;
+  font-family: 'Inter';
+  font-size: medium;
+  padding: 0 30%;
+}
+
+.menu-item-price {
+  margin: auto;
+  font-family: 'Inter';
+  font-size: medium;
+}
+
+.menu-item button {
+  margin: auto;
+}
+
+.itens-menu {
+  background-color: rgba(201, 151, 73, 50%);
+  border-radius: 10px;
+  margin: 30px 30px;
+  padding: 20px;
+  display: flex;
+}
+
+/*PÁGINA DE RESERVAS*/
+
+body {
+  background-color: #C99749;
+}
+
+form {
+  background-color: #DAC4C4;
+  width: 45%;
+  margin: 50px auto;
+  box-sizing: border-box;
+  border: 2px solid #282828;
+  border-radius: 50px;
+  box-shadow: 5px 5px 10px #ccc;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.botoes {
+  padding: 0 auto;
+  width: 80%;
+}
+
+input,
+select,
+textarea,
+fieldset {
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+#enviar {
+  display: flex;
+}
+
+p {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  padding: 20px;
+  text-align: left;
+}
+
+/*estilo reservas*/
+
+#pag-reservas {
+  background-color: #C99749;
+  ;
+
+}
+
+#imagem-principal-reserva {
+  width: 100%;
+  opacity: 35%;
+}
+
+form {
+  background-color: #C99749;
+  width: 40%;
+  box-shadow: 5px 5px 10px rgb(95, 94, 94);
+  margin: 50px auto;
+  border: 2px solid #282828;
+  padding: 30px;
+  position: absolute;
+  left: 406px;
+  right: 406px;
+  top: 110px;
+  border-radius: 20px;
+
+}
+
+input,
+select,
+textarea,
+fieldset {
+  width: 100%;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+
+}
+
+input[type="submit"],
+input[type="reset"] {
+  margin: 20px;
+  background-color: #8BC34A;
+  color: #FFF;
+  border: none;
+
+}
+
+input[type="reset"] {
+  background-color: #F47E7E;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  width: 30px;
+  margin-left: 40px;
+}
+
+/*PÁGINA DO ANIVERSARIANTE*/
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Oswald&display=swap');
+
+
+
+#pag-aniversariante {
+  background-color: #C99749;
+}
+
+.p-niver {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  padding: 20px;
+  text-align: left;
+  font-size: 20px;
+  word-spacing: 7px;
+
+}
+
+#mes {
+  width: 20%;
+  margin-bottom: 10px;
+  font: 1.3rem 'Playfair Display';
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+  text-align: center;
+  margin-left: 75px;
+}
+
+#texto-imagem {
+  margin: 100px;
+  padding: 10px;
+  display: flex;
+  border: 2px solid #000000;
+
+}
+
+#pag-aniversariante {
+  background-color: #C99749;
+}
+
+p {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  padding: 20px;
+  text-align: left;
+
+}
+
+select {
+  width: 20%;
+  margin-bottom: 10px;
+  font: 1.3rem 'Playfair Display';
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #c4c4c4;
+  border-radius: 6px;
+  text-align: center;
+  margin-left: 75px;
+}
+
+#texto-imagem {
+  margin: 100px;
+  padding: 10px;
+  display: flex;
+  border: 2px solid #000000;
+}
+
+#aniversariante-footer{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}

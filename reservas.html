@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="estilo.css">
+  <script src="script.js"></script>
+  <title>Página de reserva</title>
+  <meta name="author" content="Beatriz S. Sousa e João A. M. Borges">
+  <meta name="description" content="">
+</head>
+
+<body id="pag-reservas">
+  <header>
+    <div class="nome-header">
+      <a href="landing.html"><img src="https://i.ibb.co/vhgFvy3/The-Burguer.png" alt="Logo The Burguer"
+          title="clique e vá para a landing"></a>
+    </div>
+    <div class="itens-header">
+      <a href="landing.html">HOME</a>
+      <a href="historia.html">HISTÓRIA</a>
+      <a href="menu.html">MENU</a>
+      <a href="reservas.html">RESERVAS</a>
+      <a href="aniversariante.html">BOLO</a>
+    </div>
+  </header>
+  <img id="imagem-principal-reserva" src="img/lading.png" />
+
+  <section id="pag-reservas">
+    <form id="formulario-reserva">
+
+      <label id="nome" for="nome"> Nome:</label>
+      <input type="text" name="nome" id="nome" placeholder="Nome completo" autofocus required maxlength="150" />
+
+      <label for="cel"> Celular: </label>
+      <input type="tel" name="cel" placeholder="somente números" required pattern="^\(?\d{2}\)\d{5}[-\s]\d{4}.*?$">
+
+      <label for="local">Local</label>
+      <select name="local">
+        <option value="Brasilia">Brasília</option>
+        <option value="São Paulo">São Paulo</option>
+        <option value="Belo Horizonte">Belo Horizonte</option>
+        <option value="Goiania">Goiania</option>
+      </select>
+
+
+      <div class="calendario">
+        <label for="data">Data:</label>
+        <input type="date" name="data"></input>
+      </div>
+      <div class="calendario">
+        <label for="data">Hora</label>
+        <input type="time" name="hora">
+      </div>
+      <div class="calendario">
+        <label for="pessoas">Quant. de pessoas</label>
+        <input type="number" name="pessoas" max="30" min="2">
+      </div>
+
+
+      <fieldset>
+        <legend> Aniversaio?:</legend>
+        <input type="radio" value="sim" /> sim
+        <input type="radio" value="não" /> não
+      </fieldset>
+      </div>
+
+      <div id="enviar">
+        <input type="submit" name="para-enviar" value="enviar" />
+        <input type="reset" name="para-cancelar" value="cancelar" />
+      </div>
+
+    </form>
+  </section>
+  <footer>Desenvolvido por <a href="https://www.instagram.com/beatrizso_usa/?hl=pt-br" target="_blank">Beatriz Silva</a> e <a href="https://github.com/joaombdev">João Alexandre</a> - 2022</footer>
+
+
+
+</body>
+
+</html>

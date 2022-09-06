@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script src="script.js"></script>
+    <title>Página do aniversariante</title>
+    <meta name="author" content="Beatriz S. Sousa e João A. M. Borges">
+    <meta name="description" content="">
+</head>
+<body id="pag-aniversariante">
+    <header>
+        <div class="nome-header">
+            <a href="landing.html"><img src="https://i.ibb.co/vhgFvy3/The-Burguer.png" alt="Logo The Burguer"
+                    title="clique e vá para a landing"></a>
+        </div>
+        <div class="itens-header">
+            <a href="landing.html">HOME</a>
+            <a href="historia.html">HISTÓRIA</a>
+            <a href="menu.html">MENU</a>
+            <a href="reservas.html">RESERVAS</a>
+            <a href="aniversariante.html">BOLO</a>
+        </div>
+    </header>
+    <p class="p-niver">Em nossos restaurantes o aniversariante do dia ganha um delicioso bolo, efetuando a reserva com
+        dois dias de antecedência.</p>
+    <p class="p-niver">Escolha um mês:</p>
+    <select id="mes" onchange="mudar()">
+        <option value="janeiro">Janeiro</option>
+        <option value="fevereiro">Feveiro</option>
+        <option value="março">Março</option>
+        <option value="abril">Abril</option>
+        <option value="maio">Maio</option>
+        <option value="junho">Junho</option>
+        <option value="julho">Julho</option>
+        <option value="agosto">Agosto</option>
+        <option value="setembro">Setembro</option>
+        <option value="outubro">Outubro</option>
+        <option value="novembro">Novembro</option>
+        <option value="dezembro">Dezembro</option>
+    </select>
+
+    <div id="texto-imagem">
+        <p class="p-niver" id="texto"></p>
+
+        <img id="imagem" witdh="200" height="300" />
+    </div>
+</body>
+<script>
+
+
+
+    mudar();
+    function mudar() {
+        let mes = document.getElementById("mes").value;
+
+        switch (mes) {
+            case "janeiro":
+                texto.innerHTML = "Quem nasce em janeiro é só gente fina. Gente que gosta de se aventurar, de tentar coisas novas, de experimentar, que se preocupa com os outros, mas não é falso. As melhores pessoas que eu conheço nasceram em janeiro e uma delas é você. Você é espetacular, continue sendo esta pessoa apaixonante. Por isso escolhemos um bolo de prestigio.";
+                imagem.src = "https://i.ibb.co/rH3kNBL/bolo-prestigio-jan.png";
+                break;
+
+            case "fevereiro":
+                texto.innerHTML = "Assim que fevereiro chega, eu já sinto as boas vibrações se aproximando. Afinal, com ele também chega o dia de celebrar o seu aniversário e a felicidade que é te ter na minha vida. Que seu dia seja repleto de coisas boas! Por isso escolhemos um bolo de mousse de maracujá.";
+                imagem.src = "https://i.ibb.co/3pz95rb/bolo-mousse-fev.png";
+                break;
+
+            case "março":
+                texto.innerHTML = "Nasceram neste mês com o encanto da natureza, por isso têm uma aura tão especial, tal como o encantamento do pôr do sol. Março é o mês da natureza e a natureza das aniversariantes do mês é pura magia, só os profundos são capazes de desvendar a doçura dos seus olhos e o que secretamente vai em seus corações. Para isso escolhemos um bolo red.";
+                imagem.src = "https://i.ibb.co/y4QLRbP/bolo-red-mar.png";
+                break;
+
+            case "abril":
+                texto.innerHTML = "Chegou o melhor mês do ano, que é abril. Afinal, é o aniversário da melhor pessoa que conheço também. Muitas felicidades, que esta data seja marcada por pessoas incríveis e por coisas lindas. Que você aproveite cada segundo cheio de alegria, amor e muita paz em seu coração. Para isso escolhemos um bolo de brigadeiro. ";
+                imagem.src = "https://i.ibb.co/rpKKzb3/bolo-briga-abril.png";
+                break;
+
+            case "maio":
+                texto.innerHTML = "Maio é de vocês! Maio é o aniversário de pessoas muito queridas, seres humanos únicos, verdadeiros, honestos e cheio de disposição em ajudar. Para isso escolhemos um bolo de morango.";
+                imagem.src = "https://i.ibb.co/s3kZ9Vs/bolo-morang-maio.png";
+                break;
+
+            case "junho":
+                texto.innerHTML = "Alguém que faz aniversário em junho mora dentro do meu coração. Essa pessoa está descobrindo seu caminho na vida e já se deu conta de que o único responsável por nosso destino somos nós mesmos. Que seja ainda mais feliz nessa nova fase que se inicia. Para isso escolhemos um bolo de paçoca.";
+                imagem.src = "https://i.ibb.co/RQjw7nz/bolo-pac-junho.png";
+                break;
+
+            case "julho":
+                texto.innerHTML = "Parabéns por sempre acolherem os outros, generosidade e respeito, muito amor e paz para vocês. Julho fecha ciclos e inicia outros para os aniversariantes desse mês. Esses lindos têm o dom de encantar com sua timidez e simplicidade. São pessoas de alma e coração abertos para tudo: pessoas, momentos e experiências. Para isso escolhemos o bolo de kit-kat.";
+                imagem.src = "https://i.ibb.co/N1nX1Vj/bolo-kit-julho.png";
+                break;
+
+            case "agosto":
+                texto.innerHTML = "Agosto pode até ser um mês gelado, mas está cheio de gente que esquenta nossos corações. Desejo um feliz aniversário a todos que comemoram suas vidas em agosto. Que este mês seja incrível para vocês! Espero que possam festejar e estar ao lado das pessoas que amam, que cada dia seja cheio de amor e felicidade. Para isso escolhemos o bolo de churros. ";
+                imagem.src = "https://i.ibb.co/WKNb9gP/bolo-churros-ago.png";
+                break;
+
+            case "setembro":
+                texto.innerHTML = "Você sempre me disse que Setembro é o mês mais lindo do ano, pois é o seu aniversário! E, eu devo concordar, afinal, é o meu também! Que possamos comemorar essa data juntos, repletos de alegria e que você receba todo o amor que merece! Para isso escolhemos o bolo de floresta negra.";
+                imagem.src = "https://i.ibb.co/tPTD9wF/bolo-floresta-setem.png";
+                break;
+
+            case "outubro":
+                texto.innerHTML = "Outubro é o mês das pessoas fortes, determinadas e cheias de personalidade. Certamente não poderia haver mês melhor para você ter escolhido nascer! Que neste dia tão importante, você possa comemorar muito ao lado das pessoas que ama. Siga sempre sorrindo e fazendo todos ao seu redor felizes. Para isso escolhemos o bolo de abacaxi.";
+                imagem.src = "https://i.ibb.co/mbzvcGC/bolo-abacaxi-outu.png";
+                break;
+
+            case "novembro":
+                texto.innerHTML = "O novembro seria apenas mais um mês qualquer, mas por sorte você existe. O novembro nos reservou você, sua alegria, seu sorriso e sua presença tão especial. Espero que ele continue reservando, sem parar, mais de você: mais dos seus aniversários, mais dos seus anos de vida e mais do seu afeto. Para isso escolhemos o bolo de cenoura.";
+                imagem.src = "https://i.ibb.co/M98RFJ3/bolo-cenou-novembro.png";
+                break;
+
+            case "dezembro":
+                texto.innerHTML = "Em dezembro nos preparamos para uma nova fase. Quem aniversaria nesse mês já vai de embalo com o resto do mundo no início das novas resoluções e recomeços. É começar com a manada para conquistar novas aventuras. Meus parabéns a todos os aniversariantes de dezembro. Para isso escolhemos uma banoffe.";
+                imagem.src = "https://i.ibb.co/n3NjN78/bolo-banoffe-dezembro.png";
+                break;
+
+
+
+
+
+        }
+
+    }
+</script>
+
+<footer id="aniversariante-footer">Desenvolvido por <a href="https://www.instagram.com/beatrizso_usa/?hl=pt-br">Beatriz Silva</a> e <a href="https://github.com/joaombdev">João Alexandre</a> - 2022</footer>
+</html>
